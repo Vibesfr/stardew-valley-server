@@ -23,4 +23,4 @@ RUN mkdir -p ${HOME}/steamcmd && \
     tar -xzvf steamcmd.tar.gz -C ${HOME}/steamcmd && \
     chown -R ${USER}:${USER} ${HOME}
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
